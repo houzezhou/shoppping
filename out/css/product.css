@@ -1,0 +1,384 @@
+html,body{font-size: 10px;text-align: left;}
+#content{padding-bottom: 0;}
+a:link, a:visited{color: #05728c;}
+
+/*评分*/
+.productScoring{margin-bottom: 25px;margin-top: 2rem; font: 16px "Avenir LT W02 45 Book",sans-serif;font-size: 1.6rem;text-align: left;}
+.productScoring .Holding_Horses{
+	border-bottom: 1px solid #05728c;
+    font: 13px/1 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #05728c;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.star_cnt{margin-bottom: 25px;}
+.star_review {
+    position: relative;
+    display: inline-block;
+}
+.star_review:before {
+    content: "";
+    padding: 0 80px 0 0;
+    font: 20px/1 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 2rem;
+    background: url(https://www.anthropologie.com/static/1.15.2/images/global/icons/icon-review-star-empty.svg) 0 0 repeat-x;
+    background-size: 16px;
+    background-position: center center;
+}
+.star_review_in {
+    position: absolute;
+    top: 2px;
+    left: -999999px;
+    display: inline-block;
+    padding-bottom: 5px;
+    vertical-align: top;
+    text-indent: -999999px;
+     background: url(https://www.anthropologie.com/static/1.15.2/images/global/icons/icon-review-star.svg) 0 0 repeat-x; 
+    background-size: 16px;
+}
+.star_review_in {
+
+    left: 0;
+    width: 72px;
+    height: 16px;
+}
+
+
+.star_review_rating {
+    margin-bottom: 10px;
+    font: 13px/1.8 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #5c5c5f;
+    margin-left: 5px;
+}
+.select_color{overflow: hidden;zoom:1;padding-left: 10px;padding-right: 10px;}
+.margin_b{margin-bottom: 25px;}
+.product_reviews_count {
+    margin-bottom: 10px;
+    font: 13px/1.8 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #5c5c5f;
+    margin-bottom: 0;
+}
+.product_reviews_count:before {
+    content: '|';
+    margin: 0 10px;
+    color: #e2dfdc;
+}
+.product_reviews_count_link {
+    border-bottom: 1px solid #05728c;
+    font: 13px/1 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #05728c;
+}
+.product_reviews_count_link:link,.product_reviews_count_link:visited{color: #05728c;text-decoration: none;}
+.product_reviews_count_link:hover, .product_reviews_count_link:focus {
+    border-color: #059fb0;
+    color: #059fb0;
+}
+
+.c_form_label {
+    display: block;
+    margin-bottom: 5px;
+    font: 13px/1.3 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .11rem;
+    text-transform: uppercase;
+    color: #393940;
+}
+.c_product_colors_name{
+	margin-bottom: 10px;
+    font: 13px/1.8 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #5c5c5f;
+    text-transform: capitalize;
+}
+.o-list-swatches {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.o-list-swatches__li {
+    margin: 0 20px 20px 0;
+}
+.o-list-swatches__a{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.o-list-swatches__a--selected {
+    border-color: #5c5c5f;
+    background: #fdfdf9;
+}
+.o-list-swatches__a {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.o-list-swatches__a--selected {
+    border-color: #5c5c5f;
+}
+.o-list-swatches__swatch {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #9c9992;
+    border-radius: 50%;
+    background: #5c5c5f;
+    background-color: #e8697c;
+}
+
+.o-extra-small--4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.c-radio-styled--first {
+    padding-left: 0;
+}
+.c-radio-styled {
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font: 13px/1.5 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    text-align: center;
+    color: #5c5c5f;
+}
+.c-radio-styled__radio {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.c-radio-styled__label {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 5px;
+    border: 1px solid #5c5c5f;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+.c-radio-styled__radio:checked+.c-radio-styled__label {
+    border: 1px solid #059fb0;
+    color: #059fb0;
+}
+.c-radio-styled__radio {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.c-radio-styled__label.is-disabled {
+    border: 1px solid #e2dfdc;
+    color: #ccc;
+    cursor: default;
+}
+.g-size-select {
+    width: 66.66667%;
+    float: left;
+}
+.c-form__field {
+    margin-bottom: 25px;
+}
+.c-form__label {
+    display: block;
+    margin-bottom: 5px;
+    font: 13px/1.3 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .11rem;
+    text-transform: uppercase;
+    color: #393940;
+}
+.c-form__select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+    border: 1px solid #e2dfdc;
+    border-radius: 5px;
+    font: 16px/1.5 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .04rem;
+    color: #393940;
+    background: #fff;
+    outline: none;
+}
+.c-size-chart-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid #05728c;
+    color: #05728c
+}
+.bopis_fieldset{
+	border-top: 1px solid #ccc;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.adjacent_label{
+	padding: 10px 0;
+    display: inline-block;
+}
+.adjacent_input{
+	margin-right: 10px;
+}
+.adjacent_span{
+	display: block;
+    margin-bottom: 0;
+    font: 13px/1.3 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .11rem;
+    text-transform: uppercase;
+    color: #393940;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    letter-spacing: .04rem;
+    text-transform: uppercase;
+}
+.adjacent_span.is_disabled{color: #ccc;}
+.form_div{display: block;
+    font-weight: 700;margin-left: 29px;}
+.bopis_p{
+    margin-bottom: 10px;
+    font: 13px/1.8 "Avenir LT W02 45 Book",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .06rem;
+    color: #5c5c5f;
+    }
+.form_div_a{border-bottom: 1px solid #05728c;font: 13px/1 "Avenir LT W02 45 Book",sans-serif;font-size: 1.3rem;letter-spacing: .06rem;color: #05728c;}
+.form_adjacent_last{margin-bottom: 20px;}
+.stn_submit{
+	width: 100%;
+    padding: 14px 10px 13px;
+    margin-bottom: 20px;
+    border: none;
+    font: 13px/1 "Avenir LT W02 65 Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .35rem;
+    color: #fff;
+    background: #5d6073;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+.stn_submit span{
+	display: block;
+    min-width: 155px;
+}
+.add_links{overflow: hidden;zoom:1;margin-bottom: 30px;}
+.add_left{float: left;margin: 10px 0 30px;}
+.add_right{float: right;margin: 10px 0 30px;}
+.add_left a,.add_right a{color: #5c5c5f;border-bottom: 1px solid #5c5c5f;}
+.add_left a:link,.add_right a:visited{text-decoration: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
