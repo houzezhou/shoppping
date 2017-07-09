@@ -96,45 +96,107 @@ body{
     text-align: left;
     margin-bottom: 20px;
 }
-#content .category{
-    margin: 0 10px;
-    padding: 15px;
-    border: 1px solid #05728c;
+
+/*category*/
+.category_bar{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    left:0;
+    background: #fdfdf9;
     text-align: left;
-    background-color: #fdfdf9;
-    cursor: pointer;
-    margin-bottom: -1px;
-    font: 12.30769px "Avenir LT W02 65 Medium",sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.6px;
-    color: #05728c;
 }
-#content .filter{margin-top: 15px; padding: 0 10px;}
-#content .filter a,span{display: inline-block;}
-#content .filter a{float: left;border-bottom: 1px solid #05728c;
-    font: 13px/1 "Avenir LT W02 45 Book",sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.6px;
-    color: #05728c;}
-#content .filter span{float: right;}
-#content .product_box{margin-top:20px;}
-#content .product_box .product{width:50%;float: left;padding:0 10px;}
-#content .product_box .product img{margin-bottom: 10px;}
-.product_detial{text-align: left;}
-.product_detial h3{
-    font: 13px/1.5 "Avenir LT W02 65 Medium",sans-serif;
+.fix_body{
+    height: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-bottom: 0;
-    letter-spacing: 0.6px;
-    color: #393940;
+    position: fixed;
 }
-.product_detial .price{
-    margin-bottom: 10px;
-    line-height: 2;
-    letter-spacing: 0.6px;
-    color: #393940;
+.fix_body .category_bar{
+    display: block;
+}
+.fix_body .cate_top{
+    border-bottom: 1px solid rgba(205,209,226,.45);
+}
+.cate_top{
+    position: fixed;
+    height: 50px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #fdfdf9;
+    text-align:center;
+}
+/**/
+.c-site-menu-toggle__inner {
+    position: absolute;
+    top:15px;
+    left: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+}
+.fix_body .c-site-menu-toggle__line {
+    -webkit-transform: translate3d(0,5px,0) rotate(45deg);
+    transform: translate3d(0,5px,0) rotate(45deg);
+}
+.c-site-menu-toggle__line, .c-site-menu-toggle__line:before, .c-site-menu-toggle__line:after {
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    border-radius: 50px; 
+    background-color: #05728c;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+.c-site-menu-toggle__line:before {
+    content: "";
+    top: 5px;
+    display: block;
+    transition-property: opacity,-webkit-transform;
+    transition-property: transform,opacity;
+    transition-property: transform,opacity,-webkit-transform;
+    transition-timing-function: ease;
+    transition-duration: .2s;
+}
+.fix_body .c-site-menu-toggle__line:before {
+    opacity: 0;
+    -webkit-transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+    transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+}
+.c-site-menu-toggle__line:after {
+    content: "";
+    top: 10px;
+    display: block;
+}
+.fix_body .c-site-menu-toggle__line:after {
+    -webkit-transform: translate3d(0,-10px,0) rotate(-90deg);
+    transform: translate3d(0,-10px,0) rotate(-90deg);
+}
+.c-site-menu-toggle__line {
+    top: 8px;
+    display: block;
+}
+
+.category_bar ul{margin-top:48px;}
+.category_bar ul li{
+    padding:30px;
+
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font: 16px "Avenir LT W02 65 Medium",sans-serif;
+    color: #05728c;
+    text-decoration: none;
 }
 
 /*back to top*/
@@ -240,27 +302,6 @@ body{
     font: 13px/1.8 "Avenir LT W02 45 Book",sans-serif;
     letter-spacing: 0.6px;
     color: #5c5c5f;
-}
-
-
-.category_bar{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    top: 0;
-    left:0;
-    background: #fdfdf9;
-}
-.fix_body{
-    height: 100%;
-    overflow: hidden;
-    position: fixed;
-}
-.fix_body .category_bar{
-    display: block;
 }
 
 
